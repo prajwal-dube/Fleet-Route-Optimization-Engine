@@ -1,0 +1,10 @@
+{
+  "versions": {
+    "pg": "PostgreSQL 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit",
+    "spatial": "POSTGIS=\"3.4.2 c19ce56\" [EXTENSION] PGSQL=\"160\" GEOS=\"3.12.1-CAPI-1.18.1\" PROJ=\"9.4.0 NETWORK_ENABLED=OFF URL_ENDPOINT=https://cdn.proj.org USER_WRITABLE_DIRECTORY=/root/.local/share/proj DATABASE_PATH=/workspace/scratch/5115bcb890aa/.deps/root/usr/share/proj/proj.db\" LIBXML=\"2.9.14\" LIBJSON=\"0.17\" LIBPROTOBUF=\"1.4.1\" WAGYU=\"0.5.0 (Internal)\""
+  },
+  "successful_job_totals": {
+    "jobs": 12,
+    "orders": 912
+  }
+}

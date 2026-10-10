@@ -1,0 +1,50 @@
+initdb.txt The files belonging to this database system will be owned by user "vscode".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+creating directory /workspace/scratch/5115bcb890aa/.run/fleetpg3 ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... Europe/Berlin
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    /workspace/scratch/5115bcb890aa/.deps/root/usr/lib/postgresql/16/bin/pg_ctl -D /workspace/scratch/5115bcb890aa/.run/fleetpg3 -l logfile start
+
+ 
+createdb.txt  
+migration.txt Schema ready
+ 
+integration-tests.txt ................                                                         [100%]
+=============================== warnings summary ===============================
+../../../../root/.local/lib/python3.12/site-packages/starlette/testclient.py:37
+  /root/.local/lib/python3.12/site-packages/starlette/testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+16 passed, 4 warnings in 10.16s
+ 
+benchmark-console.txt , "optimized_vehicles": 11, "distance_reduction_pct": 12.0874, "modeled_cost_reduction_pct": 7.0573, "audit": {"passed": true, "capacity_violations": 0, "time_window_violations": 0, "shift_violations": 0, "unserved_or_duplicate_orders": 0}, "solver_status": "FEASIBLE_HEURISTIC"}
+{"orders": 150, "seed": 43, "job_id": "4d619dc3-0aaf-4c8e-a051-b90c86d41982", "admission_ms": 29.635, "job_wall_seconds": 5.3055, "matrix_seconds": 0.06085, "solve_seconds": 5.004138, "baseline_distance_km": 268.742, "optimized_distance_km": 228.201, "baseline_cost": 375.4626, "optimized_cost": 342.4353, "baseline_vehicles": 11, "optimized_vehicles": 11, "distance_reduction_pct": 15.0855, "modeled_cost_reduction_pct": 8.7964, "audit": {"passed": true, "capacity_violations": 0, "time_window_violations": 0, "shift_violations": 0, "unserved_or_duplicate_orders": 0}, "solver_status": "FEASIBLE_HEURISTIC"}
+{"orders": 150, "seed": 44, "job_id": "c4d3a452-14f3-4989-b6c0-7405b8c10759", "admission_ms": 33.006, "job_wall_seconds": 5.3214, "matrix_seconds": 0.066482, "solve_seconds": 5.004402, "baseline_distance_km": 284.836, "optimized_distance_km": 235.987, "baseline_cost": 388.3458, "optimized_cost": 348.5711, "baseline_vehicles": 11, "optimized_vehicles": 11, "distance_reduction_pct": 17.1499, "modeled_cost_reduction_pct": 10.2421, "audit": {"passed": true, "capacity_violations": 0, "time_window_violations": 0, "shift_violations": 0, "unserved_or_duplicate_orders": 0}, "solver_status": "FEASIBLE_HEURISTIC"}
+ 
+ALL FLEET CHECKS PASSED

@@ -1,0 +1,8 @@
+{
+  "crash_after_claim_exit_code": 42,
+  "lease_seconds": 5,
+  "final_status": "SUCCEEDED",
+  "attempts": 2,
+  "persisted_unique_stops": 4,
+  "passed": true
+}

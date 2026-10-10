@@ -1,0 +1,223 @@
+{
+  "id": "07c4d2e4-876e-4756-a0b1-d68a336568ff",
+  "status": "SUCCEEDED",
+  "attempts": 1,
+  "result": {
+    "audit": {
+      "passed": true,
+      "shift_violations": 0,
+      "capacity_violations": 0,
+      "time_window_violations": 0,
+      "unserved_or_duplicate_orders": 0
+    },
+    "routes": [
+      {
+        "stops": [
+          {
+            "order_id": "3",
+            "sequence": 1,
+            "demand_kg": 2,
+            "arrival_seconds": 447,
+            "waiting_seconds": 0,
+            "departure_seconds": 507,
+            "service_start_seconds": 447
+          },
+          {
+            "order_id": "4",
+            "sequence": 2,
+            "demand_kg": 2,
+            "arrival_seconds": 656,
+            "waiting_seconds": 0,
+            "departure_seconds": 716,
+            "service_start_seconds": 656
+          }
+        ],
+        "load_kg": 4,
+        "driver_id": "d0",
+        "cost_units": 150331,
+        "distance_m": 11577,
+        "vehicle_id": "v0",
+        "modeled_cost": 15.0331,
+        "start_seconds": 0,
+        "return_seconds": 1312,
+        "driver_work_seconds": 1312
+      },
+      {
+        "stops": [
+          {
+            "order_id": "2",
+            "sequence": 1,
+            "demand_kg": 2,
+            "arrival_seconds": 298,
+            "waiting_seconds": 0,
+            "departure_seconds": 358,
+            "service_start_seconds": 298
+          },
+          {
+            "order_id": "1",
+            "sequence": 2,
+            "demand_kg": 2,
+            "arrival_seconds": 507,
+            "waiting_seconds": 0,
+            "departure_seconds": 567,
+            "service_start_seconds": 507
+          }
+        ],
+        "load_kg": 4,
+        "driver_id": "d1",
+        "cost_units": 103164,
+        "distance_m": 5788,
+        "vehicle_id": "v1",
+        "modeled_cost": 10.3164,
+        "start_seconds": 0,
+        "return_seconds": 716,
+        "driver_work_seconds": 716
+      }
+    ],
+    "baseline": {
+      "audit": {
+        "passed": true,
+        "shift_violations": 0,
+        "capacity_violations": 0,
+        "time_window_violations": 0,
+        "unserved_or_duplicate_orders": 0
+      },
+      "routes": [
+        {
+          "stops": [
+            {
+              "order_id": "1",
+              "sequence": 1,
+              "demand_kg": 2,
+              "arrival_seconds": 149,
+              "waiting_seconds": 0,
+              "departure_seconds": 209,
+              "service_start_seconds": 149
+            },
+            {
+              "order_id": "2",
+              "sequence": 2,
+              "demand_kg": 2,
+              "arrival_seconds": 358,
+              "waiting_seconds": 0,
+              "departure_seconds": 418,
+              "service_start_seconds": 358
+            }
+          ],
+          "load_kg": 4,
+          "driver_id": "d0",
+          "cost_units": 103164,
+          "distance_m": 5788,
+          "vehicle_id": "v0",
+          "modeled_cost": 10.3164,
+          "start_seconds": 0,
+          "return_seconds": 716,
+          "driver_work_seconds": 716
+        },
+        {
+          "stops": [
+            {
+              "order_id": "3",
+              "sequence": 1,
+              "demand_kg": 2,
+              "arrival_seconds": 447,
+              "waiting_seconds": 0,
+              "departure_seconds": 507,
+              "service_start_seconds": 447
+            },
+            {
+              "order_id": "4",
+              "sequence": 2,
+              "demand_kg": 2,
+              "arrival_seconds": 656,
+              "waiting_seconds": 0,
+              "departure_seconds": 716,
+              "service_start_seconds": 656
+            }
+          ],
+          "load_kg": 4,
+          "driver_id": "d1",
+          "cost_units": 150331,
+          "distance_m": 11577,
+          "vehicle_id": "v1",
+          "modeled_cost": 15.0331,
+          "start_seconds": 0,
+          "return_seconds": 1312,
+          "driver_work_seconds": 1312
+        }
+      ],
+      "feasible": true,
+      "cost_units": 253495,
+      "distance_m": 17365,
+      "violations": [],
+      "modeled_cost": 25.3495,
+      "orders_served": 4,
+      "solve_seconds": 3.6e-05,
+      "solver_status": "GREEDY_FEASIBLE",
+      "vehicles_used": 2,
+      "objective_scale": 10000,
+      "unserved_order_ids": []
+    },
+    "feasible": true,
+    "cbc_status": "Optimal",
+    "cost_units": 253495,
+    "distance_m": 17365,
+    "violations": [],
+    "modeled_cost": 25.3495,
+    "orders_served": 4,
+    "solve_seconds": 0.359137,
+    "solver_status": "OPTIMAL_MILP",
+    "vehicles_used": 2,
+    "matrix_seconds": 0.015384,
+    "variable_count": 54,
+    "objective_scale": 10000,
+    "constraint_count": 88,
+    "distance_matrix_m": [
+      [
+        0,
+        1447,
+        2894,
+        4341,
+        5789
+      ],
+      [
+        1447,
+        0,
+        1447,
+        2894,
+        4341
+      ],
+      [
+        2894,
+        1447,
+        0,
+        1447,
+        2894
+      ],
+      [
+        4341,
+        2894,
+        1447,
+        0,
+        1447
+      ],
+      [
+        5789,
+        4341,
+        2894,
+        1447,
+        0
+      ]
+    ],
+    "optimality_proven": true,
+    "baseline_comparison": {
+      "distance_reduction_pct": 0.0,
+      "modeled_cost_reduction_pct": 0.0
+    },
+    "cbc_solution_status": 1,
+    "search_objective_units": 253495.0
+  },
+  "error": null,
+  "created_at": "2026-10-09T12:40:31.535781+02:00",
+  "completed_at": "2026-10-09T12:40:32.094813+02:00"
+}
